@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Logical Calculator</title>
+    <meta charset="UTF-8" />
+    <!-- Note: I have modified Mathquill to prevent |vertical bar| autocompletion -->
+    <link rel="stylesheet" href="mathquill-mod/mathquill.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="mathquill-mod/mathquill.js"></script>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <span id="input"></span>
+    <div id="interpretation"></div>
+    <div id="charslist">
+      <pre>
+A → ∀
+E → ∃
+! → ¬
+| → ∨
+& → ∧</pre>
+    </div>
+    <button id="showchars" onclick="let con = $('#charslist')[0]; con.style.maxHeight = (con.style.maxHeight)? null : con.scrollHeight + 'px';">Special Characters</button>
+    <!-- TODO: truth table -->
+    <!-- <table>
+      <tr>
+        <th>Company</th>
+        <th>Contact</th>
+        <th>Country</th>
+      </tr>
+      <tr>
+        <td>Alfreds Futterkiste</td>
+        <td>Maria Anders</td>
+        <td>Germany</td>
+      </tr>
+      <tr>
+        <td>Centro comercial Moctezuma</td>
+        <td>Francisco Chang</td>
+        <td>Mexico</td>
+      </tr>
+    </table> -->
+  </body>
+</html>
